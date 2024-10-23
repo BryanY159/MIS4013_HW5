@@ -51,9 +51,13 @@
   <script>
     function addNum(inputId, totalId) {
       const input = parseFloat(document.getElementById(inputId).value);
-      const total = parseFloat(document.getElementById(totalId).innerText);
-      
-      document.getElementById(totalId).value = input + total;
+        
+      const totalElement = document.getElementById(totalId);
+      const currentTotal = parseFloat(totalElement.innerText);
+
+      const newTotal = currentTotal + input;
+        
+      totalElement.innerText = newTotal;
     }
   </script>
     
