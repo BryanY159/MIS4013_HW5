@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <h id="total">0</h>
+  <h1 id="total">0</h1>
 
   </br>
 
@@ -51,7 +51,7 @@
   <script>
     function addNum(inputId, totalId) {
       const input = parseFloat(document.getElementById(inputId).value);
-      const total = parseFloat(document.getElementById(totalId).value);
+      const total = parseFloat(document.getElementById(totalId).innerText);
       
       document.getElementById(totalId).value = input + total;
     }
